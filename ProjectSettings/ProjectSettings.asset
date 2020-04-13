@@ -256,7 +256,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{dedicated}: Desktop/key.keystore'
+  AndroidKeystoreName: D:/Unity Workbook/key.keystore
   AndroidKeyaliasName: game
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0

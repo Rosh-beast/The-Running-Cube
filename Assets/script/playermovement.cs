@@ -51,9 +51,9 @@ public class playermovement : MonoBehaviour
     }
 
 
-    bool isSlow = false;
+     bool isSlow = false;
 
-    //MOVE USING KEYBOARD->
+    
      void FixedUpdate()
         {
 
@@ -71,14 +71,17 @@ public class playermovement : MonoBehaviour
 
         if (isSlow) {
             Debug.Log("isSlow: true");
-            rb.AddForce(0, 0, 0 * Time.deltaTime);
+           // rb.AddForce(0, 0, 600 * Time.deltaTime);
         }
         else {
             Debug.Log("isSlow: false");
             rb.AddForce(0, 0, forwardForce * Time.deltaTime);
-        }
+        }   
 
-        rb.AddForce(Input.acceleration.x * Time.deltaTime, 0, 0);
+
+
+
+        rb.AddForce(Input.acceleration.x * sidewaysForce * Time.deltaTime, 0, 0);
 
 
         if (Input.GetKey("d"))

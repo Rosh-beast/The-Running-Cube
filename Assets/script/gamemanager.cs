@@ -16,9 +16,10 @@ public class gamemanager : MonoBehaviour
     {
         if(GameHasEnded == false)
         {
-            GameHasEnded = true;
-            Debug.Log  ("Game Over");
-           Invoke( "Restart", restartdelay);
+            //GameHasEnded = true;
+            //Debug.Log  ("Game Over");
+            // Invoke( "Restart", restartdelay);
+            SceneManager.LoadScene("Gameover");
         }
     }
     void Restart()
